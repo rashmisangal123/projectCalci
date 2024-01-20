@@ -1,33 +1,35 @@
+
+import java.util.Scanner;
+
 public class calculator{
-    public int add (int x,int y){
+    public float add (float x,float y){
         return x+y;
     }
-    public int sub(int x,int y){
+    public float sub(float x,float y){
         return x-y;
     }
-    public int mutiplication(int x,int y){
+    public float mutiplication(float x,float y){
         return x*y;
     }
-    public int divison(int x,int y){
+    public float divison(float x,float y){
         return x/y;
     }
-    class main{
-    public static void main(string[] args){
+    
+    public static void main(String[] args){
         Float x,y;
-        scanner sc = new scanner(system.in);
+        Scanner sc = new Scanner(System.in);
 
-        system.out.println(x:"enter first number");
+        System.out.println("enter first number");
         x =sc.nextFloat();
 
-        system.out.println(x:"enter first number");
-        x =sc.nextFloat();
+        System.out.println("enter first number");
+        y =sc.nextFloat();
+        calculator Calculator = new calculator();
 
-        calci calculator = new calci();
-
-        system.out.println("addition of two number is: " + calculator.add(x,y));
-        system.out.println("addition of two number is: " + calculator.sub(x,y));
-        system.out.println("addition of two number is: " + calculator.mul(x,y));
-        system.out.println("addition of two number is: " + calculator.div(x,y));
+        System.out.println("addition of two number is: " + Calculator.add(x,y));
+        System.out.println("addition of two number is: " + Calculator.sub(x,y));
+        System.out.println("addition of two number is: " + Calculator.mutiplication(x,y));
+        System.out.println("addition of two number is: " + Calculator.divison(x,y));
 
         sc.close();
     }
