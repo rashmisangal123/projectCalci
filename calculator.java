@@ -14,8 +14,7 @@ public class calculator{
     public float divison(float x,float y){
         return x/y;
     }
-    
-    public static void main(String[] args){
+        public static void main(String[] args){
         Float x,y;
         Scanner sc = new Scanner(System.in);
 
@@ -34,6 +33,7 @@ public class calculator{
         sc.close();
     }
 }
+
 
         
 
