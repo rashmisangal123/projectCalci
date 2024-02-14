@@ -15,7 +15,7 @@ public class calculator{
         return x/y;
     }
         public static void main(String[] args){
-        Float x,y;
+        float x,y;
         Scanner sc = new Scanner(System.in);
 
         System.out.println("enter first number");
