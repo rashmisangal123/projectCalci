@@ -1,40 +1,35 @@
+class calculator{
 
-import java.util.Scanner;
-
-public class calculator{
-    public float add (float x,float y){
-        return x+y;
+    float sum(int a,int b){
+       return a+b;
     }
-    public float sub(float x,float y){
-        return x-y;
-    }
-    public float mutiplication(float x,float y){
-        return x*y;
-    }
-    public float divison(float x,float y){
-        return x/y;
-    }
-        public static void main(String[] args){
-        float x,y;
-        Scanner sc = new Scanner(System.in);
 
-        System.out.println("enter first number");
-        x =sc.nextFloat();
-
-        System.out.println("enter first number");
-        y =sc.nextFloat();
-        calculator Calculator = new calculator();
-
-        System.out.println("addition of two number is: " + Calculator.add(x,y));
-        System.out.println("addition of two number is: " + Calculator.sub(x,y));
-        System.out.println("addition of two number is: " + Calculator.mutiplication(x,y));
-        System.out.println("addition of two number is: " + Calculator.divison(x,y));
-
-        sc.close();
+    float subs(int a,int b){
+        return a-b;
     }
+
+    float prod(int a,int b){
+        return a*b;
+    }
+
+    float div(int a,int b){
+        return a/b;
+    }
+
+    public static void main(String args[]){
+
+        calculator c = new calculator();
+        float Add = c.sum(10,20);
+        float Sub = c.subs(10,20);
+        float Prod = c.prod(10,20);
+        float Div = c.div(10,20);
+
+        System.out.println("Sum ="+Add);
+        System.out.println("difference ="+Sub);
+        System.out.println("Product ="+Prod);
+        System.out.println("Division ="+Div);
+
+    }
+
+
 }
-
-
-        
-
-    
